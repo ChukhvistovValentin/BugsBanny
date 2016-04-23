@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/back_fon4"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.example.valentin.bugsbanny.ActivityViewExpensesDetail">
+
+    <ExpandableListView
+        android:id="@+id/listView_exp_detail_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@drawable/separator" />
+    <!--android:indicatorLeft="250dp"-->
+    <!--android:indicatorRight="300dp"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:paddingTop="20dp"
+            android:text="@string/union_money"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff0fff00"
+            android:textSize="28dp" />
+    </LinearLayout>
+
+</LinearLayout>

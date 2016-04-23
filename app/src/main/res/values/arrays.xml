@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string-array name="listArray">-->
+        <!--<item>Русский язык</item>-->
+        <!--<item>Українська мова</item>-->
+    <!--</string-array>-->
+
+    <!--<string-array name="listValues">-->
+        <!--<item>ru</item>-->
+        <!--<item>uk</item>-->
+    <!--</string-array>-->
+
+    <string-array name="entries_lang">
+        <!--<item>Язык аппарата</item>-->
+        <item>Український</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string-array name="entryvalues_lang">
+        <!--<item>default</item>-->
+        <item>uk</item>
+        <item>ru</item>
+    </string-array>
+</resources>
+
+    <!--<item>English language</item>-->
+    <!--<item>Number 4</item>-->
+
+    <!--<item>en</item>-->
+    <!--<item>4</item>-->

@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:buttonStyle">@style/ButtonTheme</item>
+    </style>
+
+
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+
+    <style name="ButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24dp</item>
+        <!--<item name="android:layout_marginTop">20dip</item>-->
+        <!--<item name="android:layout_marginBottom">20dp</item>-->
+
+        <!--<item name="android:padding">15dp</item>-->
+        <!--<item name="android:drawablePadding">10dp</item>-->
+    </style>
+
+    <style name="PreferencesTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@raw/back_fon7</item>
+    </style>
+
+
+</resources>

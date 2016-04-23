@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/back_fon1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.valentin.bugsbanny.ActivityAddNewExpenses">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="@string/date_now"
+        android:textSize="18dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text_date_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00.00.0000"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/category_name_d"
+        android:layout_alignStart="@+id/category_name_d" />
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="@string/category_name"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/category_name_d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/category_name_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_date_now"
+        android:layout_toEndOf="@+id/category_name"
+        android:layout_toRightOf="@+id/category_name"
+        android:text="!!!"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/category_name"
+        android:layout_marginTop="89dp"
+        android:text="@string/summ_exp"
+        android:textSize="18dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edit_summ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_date_now"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/text_date_now"
+        android:layout_below="@+id/textView4"
+        android:gravity="center_horizontal"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:textSize="26dp"
+        android:textColorHint="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_add_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@mipmap/new_flow"
+        android:text="@string/add_exp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/datePicker_switch"
+        android:layout_alignEnd="@+id/datePicker_switch"
+        android:layout_toRightOf="@+id/edit_summ"
+        android:layout_toEndOf="@+id/edit_summ" />
+
+    <Switch
+        android:id="@+id/switch_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:text="@string/date_switch"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/other"
+        android:layout_below="@+id/category_name_d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        />
+
+    <DatePicker
+        android:id="@+id/datePicker_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_summ"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/switch_date"
+        android:layout_alignLeft="@+id/switch_date"
+        android:layout_alignStart="@+id/switch_date" />
+
+</RelativeLayout>

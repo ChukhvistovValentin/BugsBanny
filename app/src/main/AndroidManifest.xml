@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.valentin.bugsbanny">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    <application
+        android:name=".AppBugsBanny"
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ActivityAddCategory"
+            android:label="@string/title_activity_add_category"></activity>
+        <activity
+            android:name=".ActivityAddNewExpenses"
+            android:label="@string/title_activity_activity_add_new_expenses"></activity>
+        <activity
+            android:name=".ActivityViewExpenses"
+            android:label="@string/title_activity_activity_view_expenses"></activity>
+        <activity
+            android:name=".ActivityViewExpensesDetail"
+            android:label="@string/title_activity_activity_view_expenses_detail"></activity>
+        <activity
+            android:name=".ActivityPaintGraphView"
+            android:label="@string/title_activity_activity_paint_graph_view"></activity>
+        <activity
+            android:name=".ActivityViewGraph"
+            android:label="@string/title_activity_activity_view_graph"></activity>
+        <activity
+            android:name=".ActivityViewExpensesDetailAll"
+            android:label="@string/title_activity_activity_view_expenses_detail_all"></activity>
+        <activity
+            android:name=".ActivityViewGraph2"
+            android:label="@string/title_activity_activity_view_graph"></activity>
+        <activity
+            android:name=".Preferences"
+            android:label="@string/title_activity_preferences"
+            android:theme="@style/PreferencesTheme"></activity>
+
+    </application>
+
+</manifest>

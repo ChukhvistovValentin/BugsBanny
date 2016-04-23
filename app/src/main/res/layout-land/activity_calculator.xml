@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.valentin.bugsbanny.ActivityCalculator">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/linearLayout"
+        android:paddingLeft="3dp"
+        android:text="@string/choose_month" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_calendar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/btn_calendar"
+        android:layout_below="@+id/textView10"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_month"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@android:color/transparent" />
+
+        <Spinner
+            android:id="@+id/spinner_year"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:popupBackground="@android:color/transparent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:paddingRight="3dp"
+        android:text="@string/choose_year" />
+
+    <Button
+        android:id="@+id/btn_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/cont1"
+        android:layout_toRightOf="@+id/cont1"
+        android:height="55dp"
+        android:drawableLeft="@mipmap/view_exp"
+        android:text="@string/view_expenses"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/cont1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp">
+
+        <ListView
+            android:id="@+id/listView_calculator"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/separator" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cont2"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:weightSum="1"
+            tools:context="com.example.valentin.bugsbanny.ActivityAddCategory">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center"
+                android:paddingTop="30dp"
+                android:src="@mipmap/not_data" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:paddingTop="30dp"
+                android:text="@string/view_exp_detail_empty"
+                android:textColor="#ffff0a00"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:paddingTop="10dp"
+            android:text="@string/union_money"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+</RelativeLayout>

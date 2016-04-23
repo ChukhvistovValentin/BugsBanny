@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_language_title_category">
+        <!--        <CheckBoxPreference-->
+        <!--android:defaultValue="false"-->
+        <!--android:key="checkboxLang"-->
+        <!--android:summary="@string/pref_language_cb_entries"-->
+        <!--android:title="@string/pref_language_cb_title" />-->
+
+        <!--<ListPreference-->
+        <!--android:dependency="checkboxLang"-->
+        <!--android:entries="@array/listArray"-->
+        <!--android:entryValues="@array/listValues"-->
+        <!--android:key="PrefLanguage"-->
+        <!--android:summary="@string/pref_language_entries"-->
+        <!--android:title="@string/pref_language_title" />-->
+
+        <ListPreference
+            android:dialogTitle="@string/LangDialogTitle"
+            android:entries="@array/entries_lang"
+            android:entryValues="@array/entryvalues_lang"
+            android:key="lang"
+            android:summary="@string/LangSummary"
+            android:title="@string/LangTitle" />
+        <PreferenceScreen
+            android:key="restart"
+            android:title="@string/Restart"></PreferenceScreen>
+    </PreferenceCategory>
+    <!--<PreferenceCategory-->
+    <!--android:title="Second Category">-->
+    <!--<EditTextPreference-->
+    <!--android:name="EditText Preference"-->
+    <!--android:summary="This allows you to enter a string"-->
+    <!--android:defaultValue="Nothing"-->
+    <!--android:title="Edit This Text"-->
+    <!--android:key="editTextPref" />-->
+    <!--<RingtonePreference-->
+    <!--android:name="Ringtone Preference"-->
+    <!--android:summary="Select a ringtone"-->
+    <!--android:title="Ringtones"-->
+    <!--android:key="ringtonePref" />-->
+    <!--<PreferenceScreen-->
+    <!--android:key="SecondPrefScreen"-->
+    <!--android:title="Second PreferenceScreen"-->
+    <!--android:summary="This is a second PreferenceScreen">-->
+    <!--<EditTextPreference-->
+    <!--android:name="An other EditText Preference"-->
+    <!--android:summary="This is a preference in the second PreferenceScreen"-->
+    <!--android:title="Edit text"-->
+    <!--android:key="SecondEditTextPref" />-->
+    <!--</PreferenceScreen>-->
+    <!--<Preference-->
+    <!--android:key="customPref"-->
+    <!--android:summary="This works almost like a button"-->
+    <!--android:title="Custom Preference" />-->
+    <!--</PreferenceCategory>-->
+</PreferenceScreen>

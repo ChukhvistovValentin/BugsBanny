@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:theme="@android:style/Theme">
+
+    <ImageView
+        android:id="@+id/image_exp_detail_all_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="7dp"
+        android:src="@drawable/other" />
+
+
+    <TextView
+        android:id="@+id/text_name_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_summ_category"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image_exp_detail_all_category"
+        android:layout_toLeftOf="@+id/text_summ_category"
+        android:layout_toRightOf="@+id/image_exp_detail_all_category"
+        android:gravity="center_vertical"
+        android:text="000"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tool:text='gdfgdfgfddf' />
+
+    <TextView
+        android:id="@+id/text_summ_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_exp_detail_all_category"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:textColor="#d649ff01"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tool:text="New Text" />
+
+</RelativeLayout>
